@@ -72,9 +72,7 @@ object WordGenerator {
     fun coerceWordGen(startWith: Char = ' ', desiredLength: Int = 6, minThresh: Int = 500): String {
         var word = ""
         var tries = 0
-        while (word.length < 3 || blacklist.any {  b ->
-                word.contains(b, ignoreCase = true)
-            }) {
+        while (word.length < 3) {
             word = wordGen(startWith, desiredLength, minThresh)
             tries += 1
             if (tries > 1000)
