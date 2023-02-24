@@ -10,10 +10,6 @@ object WordGenerator {
     private fun Char.toAlphaIndex(): Int = this.lowercaseChar().code - 97
     private fun Int.fromAlphaIndex(): Char = (this + 97).toChar()
 
-    private val blacklist = arrayListOf(
-        "cunt", "shit", "nigg", "faggot", "tranny", "dyke", "cock", "whore"
-    )
-
     private val probMatrix: Array<IntArray> = arrayOf(intArrayOf(97, 3175, 6104, 2051, 4998, 1347, 2313, 4289, 4178, 633, 750, 6859, 5892, 4711, 1268, 3477, 15, 9771, 3107, 5975, 1364, 1688, 2121, 166, 572, 723),
         intArrayOf(3087, 750, 16, 218, 926, 27, 67, 130, 1253, 0, 129, 284, 1448, 289, 1274, 74, 3, 978, 215, 237, 1178, 1, 117, 5, 217, 13),
         intArrayOf(4579, 62, 657, 138, 3707, 18, 15, 51, 6637, 2, 35, 327, 137, 3909, 2128, 58, 1, 1346, 2854, 807, 1407, 4, 27, 204, 354, 4),
