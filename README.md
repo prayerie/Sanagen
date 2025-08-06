@@ -1,5 +1,3 @@
 # Sanagen
 
-Sample Compose app which generates English-looking words.
-
-Codebase is admittedly awful, this was just to mess around with Compose for a bit.
+Generate pseudo-English words. Created mainly to understand Compose.
